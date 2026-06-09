@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="starfield background">
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#060914"/>
+      <stop offset="0.5" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#space)"/>
+  <path d="M82 58h2v2h-2zM164 102h3v3h-3zM254 42h2v2h-2zM343 92h3v3h-3zM433 39h2v2h-2zM525 82h3v3h-3zM617 42h2v2h-2zM721 88h3v3h-3zM842 48h2v2h-2zM913 119h3v3h-3zM62 188h3v3h-3zM145 246h2v2h-2zM229 173h3v3h-3zM307 233h2v2h-2zM389 162h3v3h-3zM501 213h2v2h-2zM589 155h3v3h-3zM681 238h2v2h-2zM770 166h3v3h-3zM884 225h2v2h-2zM99 343h2v2h-2zM181 421h3v3h-3zM281 334h2v2h-2zM352 458h3v3h-3zM442 315h2v2h-2zM539 438h3v3h-3zM650 329h2v2h-2zM724 407h3v3h-3zM821 322h2v2h-2zM911 449h3v3h-3zM47 504h3v3h-3zM239 498h2v2h-2zM468 506h3v3h-3zM694 502h2v2h-2zM872 510h3v3h-3z" fill="#f7fbff" opacity="0.85"/>
+  <path d="M120 126 138 120 154 130 168 124M646 121 681 110 713 126 748 113M86 290 131 276 171 294 218 282M528 286 568 272 612 292 653 280M768 378 811 364 858 382 904 368" fill="none" stroke="#41d3ff" stroke-width="2" opacity="0.2"/>
+  <path d="M0 430C119 397 218 401 324 426s197 45 318 3 202-52 318-21v110H0Z" fill="#080b16" opacity="0.52"/>
+</svg>

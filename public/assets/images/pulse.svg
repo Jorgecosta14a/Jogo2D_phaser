@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" role="img" aria-label="energy pulse">
+  <circle cx="14" cy="14" r="11" fill="none" stroke="#41d3ff" stroke-width="4"/>
+  <circle cx="14" cy="14" r="5" fill="#ffc75f"/>
+  <path d="M14 2V8M14 20V26M2 14H8M20 14H26" stroke="#f7fbff" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="enemy drone">
+  <path d="M24 4 39 16 35 39 24 45 13 39 9 16Z" fill="#171f2e" stroke="#b392ff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M15 20H33L29 34H19Z" fill="#b392ff" opacity="0.8"/>
+  <circle cx="24" cy="24" r="5" fill="#ff6b6b"/>
+  <path d="M4 20H11M37 20H44M6 34 14 37M34 37 42 34" stroke="#41d3ff" stroke-width="3" stroke-linecap="round"/>
+</svg>
