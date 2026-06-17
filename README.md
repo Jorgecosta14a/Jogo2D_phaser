@@ -26,7 +26,7 @@ Funcionalidades implementadas:
 - Pontuacao, vidas, progresso do objetivo e cooldown visiveis no HUD.
 - Condicoes de vitoria e game over com reinicio.
 - Suporte multilingue PT/EN com ficheiros JSON dedicados.
-- - Sistema de som misto: musica de fundo em formato comprimido (MP3) e efeitos de eventos sintetizados atraves de Web Audio.
+- Sistema de som misto: musica de fundo em formato comprimido (MP3) e efeitos de eventos sintetizados atraves de Web Audio.
 - Dificuldade progressiva, particulas, camera shake e tweens.
 
 ## Controlos
@@ -45,3 +45,50 @@ Requisito recomendado: Node.js 20.19 ou superior.
 ```bash
 npm install
 npm start
+```
+
+Depois abrir o endereco indicado pelo Vite, normalmente:
+
+```text
+[http://127.0.0.1:5173/](http://127.0.0.1:5173/)
+```
+
+Para gerar a versao final:
+
+```bash
+npm run build
+```
+
+## Aspectos multimedia
+
+As imagens estao em `public/assets/images/` e foram criadas especificamente para este trabalho em SVG leve. As resolucoes sao proporcionais ao uso em jogo:
+
+- `ship.svg` - nave do jogador, 64x64.
+- `meteor.svg` - obstaculo principal, 52x52.
+- `drone.svg` - inimigo perseguidor, 48x48.
+- `core.svg` - item recolhivel, 40x40.
+- `pulse.svg` - projetil/efeito de pulso, 28x28.
+- `starfield.svg` - fundo do jogo, carregado a 1280x720.
+
+A musica de fundo utiliza um formato de audio comprimido (MP3) para otimizar o tempo de carregamento e o peso do jogo. Os restantes efeitos sonoros sao sintetizados em tempo real com Web Audio atraves de `src/utils/sfx.js`. Esta opcao evita ficheiros WAV longos ou assets sobredimensionados, mantendo efeitos curtos para recolha, dano, disparo, vitoria e derrota.
+
+O total de assets e pequeno e nao existem ficheiros nao usados no projeto.
+
+## Estrutura
+
+```text
+jogo2d/
++-- index.html
++-- package.json
++-- README.md
++-- public/
+|   +-- assets/
+|       +-- audio/
+|       +-- images/
++-- src/
+    +-- i18n/
+    +-- scenes/
+    +-- utils/
+    +-- main.js
+    +-- styles.css
+```
