@@ -27,6 +27,13 @@ export default class GameScene extends Phaser.Scene {
 
   create() {
     resumeAudio(this);
+
+    this.musicaAmbiente = this.sound.add('musicaFundo', {
+      volume: 0.2,
+      loop: true
+    });
+    this.musicaAmbiente.play();
+
     this.add.image(640, 360, 'starfield').setAlpha(0.96);
     this.add.rectangle(640, 360, 1280, 720, 0x050711, 0.16);
     this.createDust();
@@ -395,6 +402,10 @@ export default class GameScene extends Phaser.Scene {
   }
 
   finish(victory) {
+    if (this.musicaAmbiente) {
+      this.musicaAmbiente.stop();
+    }
+
     this.isFinished = true;
     this.player.setVelocity(0, 0);
     this.enemyTimer?.remove();

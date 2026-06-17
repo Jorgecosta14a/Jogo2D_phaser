@@ -34,6 +34,9 @@ export default class PreloadScene extends Phaser.Scene {
     ASSETS.forEach(([key, path, width, height]) => {
       this.load.svg(key, path, { width, height });
     });
+
+    
+    this.load.audio('musicaFundo', '/assets/audio/fundo-espacial.mp3');
   }
 
   create() {
